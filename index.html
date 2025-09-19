@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Formulário de Cadastro </h2>
+    <form id="novoFormulario" action="paginaAulaSexta.html" method="post">
+        <label for="nome"> Digite o seu nome completo </label>
+        <input type="text" name="nome" id="nomeUser1" minlength="10" required> <br><br><hr><br>
+
+        <label for="idade"> Digite a sua data de Nascimento</label>
+        <input type="date" name="idade" id="idadeUser1" required> <br><br><hr><br>
+
+        <label for="email"> Digite o seu email </label>
+        <input type="email" name="email" id="emailUser1" required> <br><br><hr><br>
+
+        <label for="senha"> Crie uma nova senha </label>
+        <input type="password" name="senha" id="senhaUser1" minlength="8" placeholder=" digite uma senha " required> 
+        <legend> A senha deve conter no mínimo 8 caracteres contendo 1 caracter especial </legend> <br><hr><br>
+
+        <label for="sexo"> Qual é o seu gênero ?</label><br>
+        <label><input type="radio" name="genero" id="sexo"> Masculino </input></label>
+        <label><input type="radio" name="genero" id="sexo"> Feminino </input></label>
+        <label><input type="radio" name="genero" id="sexo"> outro </input></label><br><hr><br>
+
+        <label for="interesses"> Quais são os seus interesses ? </label><br><br> 
+        <label><input type="checkbox" name="interesses" id="">Fotografia</input></label>
+        <label><input type="checkbox" name="interesses" id="">Leitura</input></label>
+        <label><input type="checkbox" name="interesses" id="">Corrida</input></label>
+        <label><input type="checkbox" name="interesses" id="">Escrita</input></label>
+        <label><input type="checkbox" name="interesses" id="">Jogar</input></label>
+        <label><input type="checkbox" name="interesses" id="">Viajar</input></label>
+        <label><input type="checkbox" name="interesses" id="">Jardinagem</input></label>
+        <label><input type="checkbox" name="interesses" id="">Estudar</input></label>
+        <br><br><hr><br>
+
+        <label for="origem"> Escolha a sua Naturalidade </label><br>
+        <select name="origem" id="pais" <option value=""> Selecione </option>
+            <option value=""> Brasileiro </option>
+            <option value=""> Italiano </option>
+            <option value=""> Norte Americano </option>
+            <option value=""> Chines </option>
+            <option value=""> Japones </option>
+            <option value=""> Europeu </option>
+            <option value=""> Outro </option>
+            <input type="text" placeholder=" Qual outro?"></input>
+        </select>
+
+        <br><hr><br>
+
+        <label for="image"> Gostaria de carregar uma foto para o perfil? </label>
+        <input type="radio" name="image" id="imageUser1"> Sim </input>
+        <input type="radio" name="image" id="imageUser1"> Não </input>
+        <input type="file" name="image" id="image" accept="image/*"> <br><br><hr><br>
+
+        <button type="submit"> Enviar respostas </button>
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
